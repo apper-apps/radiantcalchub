@@ -221,6 +221,411 @@
         "icon": "Calendar",
         "defaultValue": "10"
       }
+]
+  },
+  {
+    "Id": "amortization",
+    "name": "Amortization Calculator",
+    "description": "View detailed amortization schedule and payment breakdown",
+    "category": "financial",
+    "icon": "FileText",
+    "fields": [
+      {
+        "name": "principal",
+        "label": "Loan Amount",
+        "type": "number",
+        "placeholder": "Enter loan amount",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "250000"
+      },
+      {
+        "name": "rate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "5.25"
+      },
+      {
+        "name": "years",
+        "label": "Loan Term (Years)",
+        "type": "number",
+        "placeholder": "Enter loan term",
+        "required": true,
+        "icon": "Calendar",
+        "defaultValue": "30"
+      }
+    ]
+  },
+  {
+    "Id": "mortgage-payoff",
+    "name": "Mortgage Payoff Calculator",
+    "description": "Calculate time and interest savings with extra payments",
+    "category": "financial",
+    "icon": "Target",
+    "fields": [
+      {
+        "name": "principal",
+        "label": "Current Loan Balance",
+        "type": "number",
+        "placeholder": "Enter current balance",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "200000"
+      },
+      {
+        "name": "rate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "4.75"
+      },
+      {
+        "name": "years",
+        "label": "Remaining Term (Years)",
+        "type": "number",
+        "placeholder": "Enter remaining years",
+        "required": true,
+        "icon": "Calendar",
+        "defaultValue": "25"
+      },
+      {
+        "name": "extraPayment",
+        "label": "Extra Monthly Payment",
+        "type": "number",
+        "placeholder": "Enter extra payment amount",
+        "required": false,
+        "icon": "Plus",
+        "defaultValue": "200"
+      }
+    ]
+  },
+  {
+    "Id": "house-affordability",
+    "name": "House Affordability Calculator",
+    "description": "Determine how much house you can afford based on income",
+    "category": "financial",
+    "icon": "Home",
+    "fields": [
+      {
+        "name": "income",
+        "label": "Annual Income",
+        "type": "number",
+        "placeholder": "Enter annual income",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "75000"
+      },
+      {
+        "name": "monthlyDebts",
+        "label": "Monthly Debt Payments",
+        "type": "number",
+        "placeholder": "Enter monthly debts",
+        "required": true,
+        "icon": "CreditCard",
+        "defaultValue": "500"
+      },
+      {
+        "name": "downPayment",
+        "label": "Down Payment Amount",
+        "type": "number",
+        "placeholder": "Enter down payment",
+        "required": true,
+        "icon": "Wallet",
+        "defaultValue": "50000"
+      },
+      {
+        "name": "rate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "6.5"
+      }
+    ]
+  },
+  {
+    "Id": "rent-calculator",
+    "name": "Rent Calculator",
+    "description": "Calculate rent affordability and compare with buying",
+    "category": "financial",
+    "icon": "Building",
+    "fields": [
+      {
+        "name": "income",
+        "label": "Monthly Income",
+        "type": "number",
+        "placeholder": "Enter monthly income",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "6000"
+      },
+      {
+        "name": "expenses",
+        "label": "Monthly Expenses",
+        "type": "number",
+        "placeholder": "Enter monthly expenses",
+        "required": true,
+        "icon": "Receipt",
+        "defaultValue": "2000"
+      },
+      {
+        "name": "savings",
+        "label": "Desired Savings Rate (%)",
+        "type": "number",
+        "placeholder": "Enter savings percentage",
+        "required": true,
+        "icon": "PiggyBank",
+        "defaultValue": "20"
+      }
+    ]
+  },
+  {
+    "Id": "debt-to-income",
+    "name": "Debt-to-Income Ratio Calculator",
+    "description": "Calculate your debt-to-income ratio for loan qualification",
+    "category": "financial",
+    "icon": "Scale",
+    "fields": [
+      {
+        "name": "monthlyIncome",
+        "label": "Monthly Gross Income",
+        "type": "number",
+        "placeholder": "Enter monthly income",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "5000"
+      },
+      {
+        "name": "mortgagePayment",
+        "label": "Monthly Mortgage Payment",
+        "type": "number",
+        "placeholder": "Enter mortgage payment",
+        "required": false,
+        "icon": "Home",
+        "defaultValue": "1200"
+      },
+      {
+        "name": "otherDebts",
+        "label": "Other Monthly Debt Payments",
+        "type": "number",
+        "placeholder": "Enter other debts",
+        "required": false,
+        "icon": "CreditCard",
+        "defaultValue": "400"
+      }
+    ]
+  },
+  {
+    "Id": "real-estate",
+    "name": "Real Estate Calculator",
+    "description": "Analyze real estate investment returns and cash flow",
+    "category": "financial",
+    "icon": "Building2",
+    "fields": [
+      {
+        "name": "purchasePrice",
+        "label": "Purchase Price",
+        "type": "number",
+        "placeholder": "Enter purchase price",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "350000"
+      },
+      {
+        "name": "downPayment",
+        "label": "Down Payment",
+        "type": "number",
+        "placeholder": "Enter down payment",
+        "required": true,
+        "icon": "Wallet",
+        "defaultValue": "70000"
+      },
+      {
+        "name": "monthlyRent",
+        "label": "Monthly Rent",
+        "type": "number",
+        "placeholder": "Enter monthly rent",
+        "required": true,
+        "icon": "Home",
+        "defaultValue": "2500"
+      },
+      {
+        "name": "expenses",
+        "label": "Monthly Expenses",
+        "type": "number",
+        "placeholder": "Enter monthly expenses",
+        "required": true,
+        "icon": "Receipt",
+        "defaultValue": "800"
+      },
+      {
+        "name": "rate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "5.5"
+      }
+    ]
+  },
+  {
+    "Id": "refinance",
+    "name": "Refinance Calculator",
+    "description": "Calculate savings from refinancing your mortgage",
+    "category": "financial",
+    "icon": "RefreshCw",
+    "fields": [
+      {
+        "name": "currentBalance",
+        "label": "Current Loan Balance",
+        "type": "number",
+        "placeholder": "Enter current balance",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "180000"
+      },
+      {
+        "name": "currentRate",
+        "label": "Current Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter current rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "6.25"
+      },
+      {
+        "name": "newRate",
+        "label": "New Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter new rate",
+        "required": true,
+        "icon": "TrendingDown",
+        "defaultValue": "4.5"
+      },
+      {
+        "name": "remainingYears",
+        "label": "Remaining Years",
+        "type": "number",
+        "placeholder": "Enter remaining years",
+        "required": true,
+        "icon": "Calendar",
+        "defaultValue": "22"
+      },
+      {
+        "name": "closingCosts",
+        "label": "Closing Costs",
+        "type": "number",
+        "placeholder": "Enter closing costs",
+        "required": true,
+        "icon": "FileText",
+        "defaultValue": "3000"
+      }
+    ]
+  },
+  {
+    "Id": "rental-property",
+    "name": "Rental Property Calculator",
+    "description": "Analyze rental property investment potential and ROI",
+    "category": "financial",
+    "icon": "Key",
+    "fields": [
+      {
+        "name": "propertyPrice",
+        "label": "Property Price",
+        "type": "number",
+        "placeholder": "Enter property price",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "300000"
+      },
+      {
+        "name": "downPayment",
+        "label": "Down Payment (%)",
+        "type": "number",
+        "placeholder": "Enter down payment percentage",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "25"
+      },
+      {
+        "name": "monthlyRent",
+        "label": "Monthly Rent",
+        "type": "number",
+        "placeholder": "Enter monthly rent",
+        "required": true,
+        "icon": "Home",
+        "defaultValue": "2200"
+      },
+      {
+        "name": "monthlyExpenses",
+        "label": "Monthly Expenses",
+        "type": "number",
+        "placeholder": "Enter monthly expenses",
+        "required": true,
+        "icon": "Receipt",
+        "defaultValue": "600"
+      },
+      {
+        "name": "rate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "5.75"
+      }
+    ]
+  },
+  {
+    "Id": "apr-calculator",
+    "name": "APR Calculator",
+    "description": "Calculate Annual Percentage Rate including fees and costs",
+    "category": "financial",
+    "icon": "Calculator",
+    "fields": [
+      {
+        "name": "loanAmount",
+        "label": "Loan Amount",
+        "type": "number",
+        "placeholder": "Enter loan amount",
+        "required": true,
+        "icon": "DollarSign",
+        "defaultValue": "150000"
+      },
+      {
+        "name": "interestRate",
+        "label": "Interest Rate (%)",
+        "type": "number",
+        "placeholder": "Enter interest rate",
+        "required": true,
+        "icon": "Percent",
+        "defaultValue": "5.0"
+      },
+      {
+        "name": "loanTerm",
+        "label": "Loan Term (Years)",
+        "type": "number",
+        "placeholder": "Enter loan term",
+        "required": true,
+        "icon": "Calendar",
+        "defaultValue": "30"
+      },
+      {
+        "name": "fees",
+        "label": "Total Fees and Costs",
+        "type": "number",
+        "placeholder": "Enter total fees",
+        "required": true,
+        "icon": "Receipt",
+        "defaultValue": "2500"
+      }
     ]
   },
   {
