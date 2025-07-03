@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+:root {
+  --toastify-font-family: 'Inter', sans-serif;
+  --toastify-toast-width: 360px;
+  --toastify-toast-min-height: 56px;
+  --toastify-toast-max-height: 120px;
+  --toastify-z-index: 9999;
+}
+
+.Toastify__toast {
+  @apply rounded-xl shadow-card;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply font-body antialiased;
+    @apply text-gray-900 bg-white;
+    @apply leading-relaxed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+  
+  input, textarea, select {
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-glass bg-white/20 border border-white/20;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-card-hover hover:-translate-y-1;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primary/90 text-white;
+    @apply px-6 py-3 rounded-lg font-medium;
+    @apply hover:from-primary/90 hover:to-primary/80;
+    @apply transition-all duration-200 hover:shadow-lg;
+    @apply active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border-2 border-primary text-primary;
+    @apply px-6 py-3 rounded-lg font-medium;
+    @apply hover:bg-primary hover:text-white;
+    @apply transition-all duration-200 hover:shadow-lg;
+    @apply active:scale-95;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+  
+  .shimmer {
+    @apply animate-shimmer bg-shimmer bg-[length:200px_100%];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
